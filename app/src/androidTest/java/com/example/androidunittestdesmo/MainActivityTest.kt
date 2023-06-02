@@ -22,6 +22,12 @@ class MainActivityTest {
     fun performMainActivityTest() {
         onView(withId(R.id.one)).perform(click())
         onView(withId(R.id.tv)).check(matches(withText("one")))
+
+        onView(withId(R.id.two)).perform(click())
+        onView(withId(R.id.tv)).check(matches(withText("two")))
+
+        onView(withId(R.id.three)).perform(click())
+        onView(withId(R.id.tv)).check(matches(withText("three")))
     }
 
 }
